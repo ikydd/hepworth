@@ -1,0 +1,1 @@
+<input id="<?php echo $id ?>" type="submit" name="<?php echo $name; ?>" class="btn btn-primary" value="<?php echo $value; ?>" />

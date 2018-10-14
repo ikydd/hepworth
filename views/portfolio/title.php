@@ -1,0 +1,1 @@
+<h4 id="page-title"><?php echo $title ;?></h4>

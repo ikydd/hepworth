@@ -1,0 +1,7 @@
+public/uploads
+
+configs/*.php
+configs/.salt
+
+.vagrant
+.database

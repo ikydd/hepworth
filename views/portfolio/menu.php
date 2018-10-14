@@ -1,0 +1,1 @@
+<div id="side-menu">  <ul>    <?php foreach($items as $item): ?>    <li class="menu-link<?php if($item->active) echo ' active';?>"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>    <?php endforeach; ?>  </ul>  <?php echo $social; ?></div>

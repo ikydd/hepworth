@@ -1,0 +1,9 @@
+table.tabledrag-table .tabledrag-weight {
+  display:none;
+}
+
+table.tabledrag-table .tabledrag-handle-cell{
+  width: 20px;
+}
+
+table.tabledrag-table caption { visibility: hidden; color: #330033 }

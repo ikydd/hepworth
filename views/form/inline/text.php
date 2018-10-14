@@ -1,0 +1,1 @@
+<input id="<?php echo $id ?>" type="text" class="input-xlarge" name="<?php echo $name; ?>" id="<?php echo $id; ?>" placeholder="<?php echo $title; ?>" value="<?php echo $value; ?>"> 

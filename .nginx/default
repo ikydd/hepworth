@@ -1,0 +1,24 @@
+server {
+  listen 80;
+
+  server_name hepworth.local;
+
+  root /var/www;
+
+  location /configs/ {
+    deny all;
+  }
+
+  location /public/ {
+    try_files $uri $uri/;
+  }
+
+  location / {
+    fastcgi_split_path_info ^(.+\.php)(/.+)$;
+    fastcgi_pass unix:/var/run/php5-fpm.sock;
+    fastcgi_index index.php;
+    include fastcgi_params;
+
+    rewrite ^(.*)$ /index.php?q=$1 break;
+  }
+}
